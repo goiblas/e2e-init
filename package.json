@@ -5,7 +5,12 @@
   "description": "e2e init project",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "npm run cypress:open",
+    "cy:open": "cypress open --e2e",
+    "cy:open:chrome": "cypress open --e2e --browser chrome",
+    "cy:open:chrome:mobile": "cypress open --e2e --browser chrome --config viewportWidth=375,viewportHeight=667",
+    "cy:run:chrome:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -23,6 +28,7 @@
   },
   "homepage": "https://github.com/e2e-testing-wg/e2e-init#readme",
   "devDependencies": {
-    "cypress": "^10.11.0"
+    "cypress": "^10.11.0",
+    "cypress-mochawesome-reporter": "^3.2.3"
   }
 }
