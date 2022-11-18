@@ -5,7 +5,7 @@
   "description": "e2e init project",
   "main": "index.js",
   "scripts": {
-    "test": "npm run cypress:open",
+    "test": "npm run cy:open",
     "cy:open": "cypress open --e2e",
     "cy:open:chrome": "cypress open --e2e --browser chrome",
     "cy:open:chrome:mobile": "cypress open --e2e --browser chrome --config viewportWidth=375,viewportHeight=667",
