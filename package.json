@@ -10,7 +10,8 @@
     "cy:open:chrome": "cypress open --e2e --browser chrome",
     "cy:open:chrome:mobile": "cypress open --e2e --browser chrome --config viewportWidth=375,viewportHeight=667",
     "cy:run:chrome:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:run:dashboard": "cypress run --record --key 99e2f398-49bf-4bae-8e06-b67561f837fb"
   },
   "repository": {
     "type": "git",
