@@ -7,9 +7,10 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require("cypress-mochawesome-reporter/plugin")(on);
     },
-    baseUrl: 'https://example.cypress.io',
+    specPattern: "cypress/e2e/**/*/.{cy,spec}.{js,jsx,ts,tsx}",
+    baseUrl: "https://example.cypress.io",
     pageLoadTimeout: 1000,
     viewportHeight: 950,
-    viewportWidth: 1920
+    viewportWidth: 1920,
   },
 });
